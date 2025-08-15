@@ -1,0 +1,134 @@
+/*导航栏*/
+.navbar {
+    background-color: #e0e0e0;
+    padding: 0.3rem 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*设置z序*/
+    margin: 0;
+    
+}
+
+/* 导航栏容器，横向分布品牌和菜单 */
+.navbar-container {
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+/* 品牌区：logo与文字横向排列 */
+.navbar-brand {
+    align-items: center;
+    gap: 0.75rem;
+    display: flex;
+}
+
+/* logo图片样式，圆形头像 */
+.navbar-logo {
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+/* 品牌名称样式，加粗不换行 */
+.navbar-logo-name {
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+/* ========== 导航菜单样式 ========== */
+.navbar-menu {
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    /* 去除默认圆点 */
+    flex-wrap: nowrap;
+    /* 不换行 */
+    overflow-x: auto;
+    /* 超出时横向滚动 */
+    -webkit-overflow-scrolling: touch;
+    /* 移动端平滑滚动 */
+    padding: 0.5rem 0;
+}
+
+/* 单个菜单项链接样式 */
+.navbar-link {
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    flex-wrap: nowrap;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    /* 过渡动画 */
+    text-decoration: none;
+    /* 去除下划线 */
+    color: inherit;
+    /* 继承父元素颜色 */
+}
+
+/* 鼠标悬停菜单项高亮 */
+.navbar-link:hover {
+    background-color: #d0d0d0;
+}
+
+/* 当前激活菜单项样式 */
+.navbar-link.active {
+    font-weight: 700;
+    background-color: #c8c8c8;
+}
+
+@media (min-width: 1000px) {
+    .navbar-link {
+        font-size: 1.1rem;
+    }
+
+    .navbar-menu {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar-menu {
+        gap: 0rem
+    }
+}
+
+@media(max-width:635px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-menu {
+        gap: 1rem
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-menu {
+        gap: 0rem
+    }
+}
+@media(max-width: 420px) {
+    .navbar-menu {
+        display: none; /* 完全隐藏导航链接 */
+    }
+    .navbar-logo{
+        height: 3rem;
+        width: 3rem;
+    }
+    .navbar-logo-name {
+        font-size: 1rem;
+    }
+}
