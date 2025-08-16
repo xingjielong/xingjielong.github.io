@@ -99,13 +99,13 @@
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
     .navbar-menu {
         gap: 0rem
     }
 }
 
-@media(max-width:635px) {
+@media(max-width:680px) {
     .navbar-container {
         flex-direction: column;
     }
@@ -115,12 +115,12 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .navbar-menu {
         gap: 0rem
     }
 }
-@media(max-width: 420px) {
+@media(max-width: 450px) {
     .navbar-menu {
         display: none; /* 完全隐藏导航链接 */
     }
