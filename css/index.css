@@ -35,7 +35,6 @@
             background-color: var(--secondary-color);
             color: var(--text-color);
             line-height: 1.6;
-            overflow: hidden;
         }
 
         /* 链接样式 */
@@ -74,6 +73,7 @@
         .grid {
             display: grid;
         }
+
         /* ========== 主要内容区域 ========== */
         /* 英雄横幅区 */
         .hero {
@@ -199,6 +199,7 @@
             max-width: 500px;
             opacity: 0.8;
         }
+
         @media (max-width: 480px) {
             .logo-circle {
                 width: 200px;
