@@ -1,10 +1,19 @@
 const versions = [
     {
+        version: "5.1",
+        files: [
+            { name: "Windows 64位安装包", url: "The_Last_Ending_51_Windows_x64_Setup_User.exe", size: "20.4MB", platform: "Windows x64" },
+            { name: "Windows 64位压缩包", url: "The_Last_Ending_5.1_Windows_x64_User.zip", size: "27.9MB", platform: "Windows x64" },
+            { name: "Windows 32位压缩包", url: "The_Last_Ending_5.1_Windows_x86_User.zip", size: "27.6MB", platform: "Windows x86" },
+            { name: "Android 安装包", url: "The_Last_Ending_5.1_Android_User.apk", size: "22.0MB", platform: "Android" }
+        ]
+    },
+    {
         version: "4.4.5",
         files: [
             { name: "Windows 64位安装包", url: "The_Last_Ending_4.4.5_Windows_x64_Setup_User.exe", size: "20.2MB", platform: "Windows x64" },
             { name: "Windows 64位压缩包", url: "The_Last_Ending_4.4.5_Windows_x64_User.zip", size: "27.7MB", platform: "Windows x64" },
-            { name: "Windows 32位压缩包", url: "The_Last_Ending_4.4.5_Windows_x32_User.zip", size: "23.6MB", platform: "Windows x86" },
+            { name: "Windows 32位压缩包", url: "The_Last_Ending_4.4.5_Windows_x86_User.zip", size: "23.6MB", platform: "Windows x86" },
             { name: "Android 安装包", url: "The_Last_Ending_4.4.5_Android_User.apk", size: "21.8MB", platform: "Android" }
         ]
     },
